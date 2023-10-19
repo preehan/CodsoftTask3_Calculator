@@ -1,0 +1,73 @@
+/* Resetiing default styles  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling the main section */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+/* Styling calculator container */
+.calculator{
+    position:relative;
+    display: grid;
+    border: 2px solid cyan;
+    padding: 25px;
+    border-radius: 20px;
+    background-color:darkcyan ;
+}
+
+/* Styling the input display */
+.calculator .value{
+    grid-column: span 4;
+    height: 30px;
+    text-align: right;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    
+}
+
+/* Styling calculator buttons */
+.calculator span{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    place-items: center;
+    border: 2px solid cyan;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+/* Active state of calculator buttons */
+.calculator .span:active{
+    background: cyan;
+    color: #000;
+}
+
+/*Styling C Button */
+.calculator span.clear{
+    grid-column: span 2;
+    width: 120px;
+    border: 2px solid cyan;
+    font-size: 25px;
+}
+
+/* Styling the "+" button*/
+.calculator span.plus{
+    grid-row: span 2;
+    height: 120px;
+}
+
+
